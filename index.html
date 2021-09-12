@@ -1,62 +1,218 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
+
         <title>CV</title>
     </head>
-    <body>
-        <div class="col-3">
-            <img src="" alt="">
-            <p>+34 689 936 098</p>
-            <p>08/01/1997</p>
-            <p>43295471H</p>
-            <p>marcoshernandezhr@gmail.com</p>
-        </div>
-        <div class="col-9">
-            <h2>Educación</h2>
-            <h2>Experiencia</h2>
-            <h2>Educación</h2>
-            <div>
-                <h2>Idiomas</h2>
-                <p>Español</p>
-                <p>Inglés</p>
-            </div>
+
+    <body class="flex">
+
+        
+
+        <div class="col col-3 bg-light-grey text-center">
+            <img id="foto_perfil" src="images/foto_perfil.jpg" alt="">
             
-            <div>
-                <h2>Cursos</h2>
-                <ul>
-                    <li>
-                        <h3>Kaggle</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Intro to Machine Learning</li>
-                            <li>Intermediate Machine Learning</li>
-                            <li>Data Visualization</li>
-                            <li>Pandas</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h3>Coursera</h3>
-                        <ul>
-                            <li>The Data Scientist's Toolbox</li>
-                        </ul>
-                    </li>
-                </ul>
-                <h3>Kaggle</h3>
-                <h3>Coursera</h3>
-            </div>
+            <div class="separa-10"></div>
 
+            <ul class="lista-info">
+                <li><p>+34 689 936 098</p></li>
+                <li><p>08/01/1997</p></li>
+                <li><p>43295471H</p></li>
+                <li><p>marcoshernandezhr@gmail.com</p></li>
+            </ul>
         </div>
 
-            <div>
-                <p>Carné de conducir B
-                    Participante en el programa ESTALMAT
-                    (Curso 2010 - 2011). Programa de
-                    detección y estímulo del talento precoz
-                    en matemáticas.
-                    Segundo premio certamen literario en el
-                    Instituto de Enseñanza Secundaria
-                    Ingenio (2012)</p>
-            </div>
-        </div>
+
+
+
+
+        <div class="col col-9 bg-yellow">
+
+            <ul>
+                <li>
+                    <h2>Educación</h2>
+                    <ul>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9">
+                                    <p>Universidad de Las Palmas de Gran Canaria</p>
+                                    <p>Grado en Administración y Dirección de Empresas</p>
+                                    <p>2015 – 2021</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9 flex">
+                                    <p>Universidad de Las Palmas de Gran Canaria</p>
+                                    <p>Grado en Ingeniería Informática</p>
+                                    <p>Especialización en Sistemas de la Información</p>
+                                    <p>2015 – 2021</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Experiencia</h2>
+                    <ul>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9">
+                                    <p>Universidad de Las Palmas de Gran Canaria</p>
+                                    <p>Grado en Administración y Dirección de Empresas</p>
+                                    <p>2015 – 2021</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9 flex">
+                                    <p>Universidad de Las Palmas de Gran Canaria</p>
+                                    <p>Grado en Ingeniería Informática</p>
+                                    <p>Especialización en Sistemas de la Información</p>
+                                    <p>2015 – 2021</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Idiomas</h2>
+                    <ul>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9">
+                                    <p>Español</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9 flex">
+                                    <p>Inglés</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Cursos</h2>
+                    <ul>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9">
+                                    <p>Python - Kaggle</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9 flex">
+                                    <p>Intro to Machine Learning - Kaggle</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9 flex">
+                                    <p>Intermediate Machine Learning - Kaggle</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9 flex">
+                                    <p>Data Visualization - Kaggle</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9 flex">
+                                    <p>Pandas - Kaggle</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9 flex">
+                                    <p>The Data Scientist's Toolbox - Coursera</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h2>Otros</h2>
+                    <ul>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9">
+                                    <p>Carné de conducir B
+
+                                        Segundo premio certamen literario en el
+                                        Instituto de Enseñanza Secundaria
+                                        Ingenio (2012)</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="concepto">
+                                <div class="col col-3">
+                                    <img src="images/ulpgc.svg" alt="">
+                                </div>
+                                <div class="col col-9 flex">
+                                    <p>Participante en el programa ESTALMAT (Curso 2010 - 2011). Programa de detección y estímulo del talento precoz en matemáticas.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+
+
+
     </body>    
 </html>

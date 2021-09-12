@@ -27,8 +27,13 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-div{display: block;}
-ul, li{padding: 0; margin: 0; list-style: none;}
+div{
+    display: block;
+}
+ul, li{
+    justify-content: center;
+    align-content: center;
+    }
 .clearfix{clear: both;}
 .relative{position: relative;}
 .fixed{position: fixed !important;}
@@ -59,26 +64,7 @@ h6{font-size: 8px;}
 
 a, p, li{text-decoration: none; margin: 0px; font-family: "Open Sans", sans-serif}
 .flex{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-}
-.wrapper-flex{
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 *//* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-box;      /* TWEENER - IE 10 */     /* NEW - Chrome */
-    display: -ms-flexbox;
-    display: flex;
-
-    -webkit-box-align: center;
-
-    -ms-flex-align: center;
-
-    align-items: center;
-    -webkit-align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-justify-content: center;
 }
 .hidden{
     display: none !important;
@@ -107,11 +93,6 @@ a, p, li{text-decoration: none; margin: 0px; font-family: "Open Sans", sans-seri
     background-repeat:no-repeat;
     background-size:cover;
 }
-.imagen:after{
-    content:"";
-    padding-top: 100%; 
-    display: block;
-}
 .col{
     position: relative;
     float: left;
@@ -127,9 +108,13 @@ a, p, li{text-decoration: none; margin: 0px; font-family: "Open Sans", sans-seri
 .col-6{width: 50%;} .col-offset-6{margin-left: 50%;}
 .col-push-6{left: 50%;} .col-pull-6{right: 50%;}
 .col-8{width: 66.66666667%;}
+.col-9{width: 75%;}
 .col-10{width: 83.33333333%;}
 .col-12{width: 100%;}
-body{background-color: var(--dark-grey);}
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
 body, a{
     margin: 0;
     font-size: 18px;
@@ -171,6 +156,30 @@ body, a{
     text-align: center;
     height: 5px;
     width: 100%;
+    position: relative;
     border-radius: 16px;
     background-color: var(--red);
+}
+
+#foto_perfil{
+    width: 100%;
+    /* padding: 10px; */
+}
+.lista-info{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+}
+.lista-info li{
+    padding: 5px 0px;
+}
+img{
+    width: 100%;
+}
+.concepto{
+    display: flex;
+}
+.concepto div{
+    display: flex;
+    flex-direction: column;
 }
