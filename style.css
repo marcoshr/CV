@@ -203,3 +203,9 @@ body{
 .contenido > ul > li > ul > li{
     margin: 20px 0px;
 }
+img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
