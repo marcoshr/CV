@@ -33,7 +33,10 @@ div{
 ul, li{
     justify-content: center;
     align-content: center;
-    }
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 .clearfix{clear: both;}
 .relative{position: relative;}
 .fixed{position: fixed !important;}
@@ -114,10 +117,8 @@ a, p, li{text-decoration: none; margin: 0px; font-family: "Open Sans", sans-seri
 body{
     display: flex;
     flex-wrap: wrap;
-}
-body, a{
-    margin: 0;
-    font-size: 18px;
+    margin: 40px;
+    background-color: var(--light-grey);
 }
 .alert {
     padding: 15px;
@@ -161,25 +162,44 @@ body, a{
     background-color: var(--red);
 }
 
+
+
+.info-personal{
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
 #foto_perfil{
     width: 100%;
-    /* padding: 10px; */
 }
-.lista-info{
+.lista-info-personal{
     font-size: 14px;
     font-weight: 600;
     text-align: left;
 }
-.lista-info li{
-    padding: 5px 0px;
+.lista-info-personal li{
+    padding: 10px 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
-img{
-    width: 100%;
+.lista-info-personal li i{
+    margin-right: 5px;
 }
 .concepto{
     display: flex;
 }
-.concepto div{
+.concepto>div{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.concepto>div:last-child{
+    text-align: left;
+}
+.contenido > ul > li{
+    margin-bottom: 30px;
+}
+.contenido > ul > li > ul > li{
+    margin: 20px 0px;
 }
